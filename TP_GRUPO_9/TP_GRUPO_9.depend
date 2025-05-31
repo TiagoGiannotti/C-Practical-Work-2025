@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1584205420 source:c:\users\tiago\desktop\trabajo practico topicos\c-practical-work-2025\tp_grupo_9\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1745700030 source:c:\users\tiago\desktop\trabajo practico topicos\c-practical-work-2025\tp_grupo_9\utilities.c
+	"main.h"
+
+1745699504 c:\users\tiago\desktop\trabajo practico topicos\c-practical-work-2025\tp_grupo_9\main.h
+
