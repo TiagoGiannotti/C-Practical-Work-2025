@@ -17,19 +17,55 @@ typedef struct {
     size_t capacity;    // Capacidad total de elementos del arreglo
 } t_index;
 
-void index_create(t_index*);
+/**
+ * @brief Inicializa el índice, reservando memoria y dejando el arreglo vacío.
+ * @param idx Puntero al índice a inicializar.
+ */
+void index_create(t_index* idx);
 
-int index_insert(t_index*, const t_reg_index*);
+/**
+ * @brief Inserta un nuevo registro en el índice, manteniendo el orden por DNI.
+ * @param idx Puntero al índice.
+ * @param new_entry Puntero al registro a insertar.
+ * @return 1 si se insertó correctamente, 0 si hubo error de memoria.
+ */
+int index_insert(t_index* idx, const t_reg_index* new_entry);
 
-int index_delete(t_index*, const t_reg_index*);
+/**
+ * @brief Elimina un registro del índice según el DNI.
+ * @param idx Puntero al índice.
+ * @param key Puntero al registro clave (DNI) a eliminar.
+ * @return 1 si se eliminó, 0 si no se encontró.
+ */
+int index_delete(t_index* idx, const t_reg_index* key);
 
-void index_clear(t_index*);
+/**
+ * @brief Libera la memoria utilizada por el índice y lo deja vacío.
+ * @param idx Puntero al índice.
+ */
+void index_clear(t_index* idx);
 
-int index_load(t_index*, const char*);
+/**
+ * @brief Carga el índice desde un archivo de socios, agregando solo los activos.
+ * @param idx Puntero al índice.
+ * @param path Ruta del archivo binario de socios.
+ * @return 1 si se cargó correctamente, 0 si hubo error de apertura.
+ */
+int index_load(t_index* idx, const char* path);
 
-int index_empty(const t_index*);
+/**
+ * @brief Indica si el índice está vacío.
+ * @param idx Puntero al índice.
+ * @return 1 si está vacío, 0 si tiene elementos.
+ */
+int index_empty(const t_index* idx);
 
-int index_find(const t_index*, t_reg_index*);
-
+/**
+ * @brief Busca un registro en el índice por DNI.
+ * @param idx Puntero al índice.
+ * @param key_out Puntero al registro clave (DNI). Si se encuentra, se completa con la posición.
+ * @return 1 si se encontró, 0 si no.
+ */
+int index_find(const t_index* idx, t_reg_index* key_out);
 
 #endif // INDICE_H_INCLUDED

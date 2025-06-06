@@ -9,16 +9,12 @@
 #define MINIMUM_DNI 10000
 
 /* -------------------------------- Functions ------------------------------- */
-
+/**
+ * @brief Valida todos los campos de un socio según reglas de negocio.
+ * @param partner Puntero al socio a validar.
+ * @param processDate Fecha de proceso para validaciones.
+ * @return 1 si es válido, 0 si no.
+ */
 unsigned char isValidPartner(t_partner* partner, t_date* processDate);
-
-// char category[11];
-//     char fullName[60];
-//     char sex;
-//     char status;	
-//     long int dni;
-//     t_date date_afiliation;
-//     t_date date_birth;
-//     t_date date_last_payment;
 
 #endif // VALIDATORS_H_INCLUDED
