@@ -1,10 +1,45 @@
 # depslib dependency file v1.0
-1584205420 source:c:\users\tiago\desktop\trabajo practico topicos\c-practical-work-2025\tp_grupo_9\main.c
+1749232093 source:c:\users\tiago\desktop\trabajo practico topicos\c-practical-work-2025\tp_grupo_9\main.c
+	"./main.h"
+	"./Indice.h"
 	<stdio.h>
 	<stdlib.h>
 
-1745700030 source:c:\users\tiago\desktop\trabajo practico topicos\c-practical-work-2025\tp_grupo_9\utilities.c
-	"main.h"
+1749232141 source:c:\users\tiago\desktop\trabajo practico topicos\c-practical-work-2025\tp_grupo_9\utilities.c
+	"./main.h"
+	"./validators.h"
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<math.h>
+	<ctype.h>
 
-1745699504 c:\users\tiago\desktop\trabajo practico topicos\c-practical-work-2025\tp_grupo_9\main.h
+1749224764 c:\users\tiago\desktop\trabajo practico topicos\c-practical-work-2025\tp_grupo_9\main.h
+	"./Indice.h"
+	"./date.h"
+	<math.h>
+
+1748722992 c:\users\tiago\desktop\trabajo practico topicos\c-practical-work-2025\tp_grupo_9\date.h
+
+1748726778 source:c:\users\tiago\desktop\trabajo practico topicos\c-practical-work-2025\tp_grupo_9\date.c
+	"./date.h"
+
+1748725849 c:\users\tiago\desktop\trabajo practico topicos\c-practical-work-2025\tp_grupo_9\validators.h
+	"./main.h"
+
+1748727274 source:c:\users\tiago\desktop\trabajo practico topicos\c-practical-work-2025\tp_grupo_9\validators.c
+	"./main.h"
+	"./date.h"
+	"./validators.h"
+	<string.h>
+
+1749224726 source:c:\users\tiago\desktop\trabajo practico topicos\c-practical-work-2025\tp_grupo_9\indice.c
+	"./Indice.h"
+	"./main.h"
+	<stdlib.h>
+	<string.h>
+
+1749231077 c:\users\tiago\desktop\trabajo practico topicos\c-practical-work-2025\tp_grupo_9\indice.h
+	<stdlib.h>
+	<stdio.h>
 

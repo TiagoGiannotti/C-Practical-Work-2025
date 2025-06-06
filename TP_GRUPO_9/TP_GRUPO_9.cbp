@@ -31,13 +31,25 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="Indice.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Indice.h" />
 		<Unit filename="Utilities.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="date.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="date.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="main.h" />
+		<Unit filename="validators.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="validators.h" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>
